@@ -24,16 +24,18 @@ public int longestCommonSubsequence(String str1, String str2) {
         int m=str1.length(), n=str2.length();
         int[][] dp = new int[m+1][n+1];
         // 边界自动是0
+        int maxLen = 0;
         for(int i=1; i<=m; i++){
             for(int j=1; j<=m; j++){
                 if(str1.charAt(i-1)==str2.charAt(j-1)){
                     dp[i][j]=dp[i-1][j-1]+1;
+                    maxLen = Math.max(maxLen, dp[i][j]);
                 }else{
                     dp[i][j] = 0;
                 }
             }
         }
-        return dp[m][n];
+        return maxLen;
     }
 ```
 
