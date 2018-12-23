@@ -27,3 +27,20 @@ For Jackson to work well, one of the two sides of the relationship should not be
 So, Jackson takes the forward part of the reference, for example an attribute of a java class (i.e. List<Role> roles in User class), and converts it in a json-like storage format; this is the so-called marshalling process.
 Then, Jackson looks for the back part of the reference (i.e. List<User> users in Role class) and leaves it as it is, not serializing it. This part of the relationship will be re-constructed during the deserialization (unmarshalling) of the forward reference.
 http://keenformatics.blogspot.com/2013/08/how-to-solve-json-infinite-recursion.html
+
+- Teacher's blog:
+http://appsdeveloperblog.com/infinite-recursion-in-objects-with-bidirectional-relationships/
+
+- STS添加tomcat服务
+https://blog.csdn.net/qijianglin/article/details/82967628
+
+- 找到dynamic web Project
+https://blog.csdn.net/TnkTechSHL/article/details/81259798
+勾选对应的位置就可以加入tomcat
+
+- 对于一个文件重新检查依赖，右键用validate
+
+https://blog.csdn.net/Sloth_Sloth/article/details/76982776
+
+### Password reset
+[!alt text](picture/password_reset.png)
