@@ -43,4 +43,4 @@ https://blog.csdn.net/TnkTechSHL/article/details/81259798
 https://blog.csdn.net/Sloth_Sloth/article/details/76982776
 
 ### Password reset
-[!alt text](picture/password_reset.png)
+![alt text](picture/password_reset.png)
