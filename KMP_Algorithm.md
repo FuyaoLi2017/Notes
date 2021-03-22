@@ -23,7 +23,7 @@ public int[] buildNext(String P) {
 	int t = -1, j = 0; // j为“主”串指针，t为移动串指针
 	while (j < m - 1) {
 		if ((t < 0) || (P.charAt(j) == P.charAt(t))) {
-			// 匹配的情况下，若后一元素不相等时才能移动到t，否则要直接移动到next[t](递归的查，防止移动后再次不匹配)
+			// 匹配的情况下，若</!-->后一元素不相等时才能移动到t，否则要直接移动到next[t](递归的查，防止移动后再次不匹配)
 			j ++; t ++;
 			next[j] = (P.charAt(j) != P.charAt(t) ? t : next[t]);
 		} else { // 不匹配时，加速移动模式串
